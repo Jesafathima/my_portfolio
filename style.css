@@ -1,0 +1,578 @@
+
+*{
+    font-family: 'Times New Roman';
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.Navigationbar {
+    background-color: #008F83;
+    padding-top: 10px;
+    position:fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+}    
+.Navigationbar .menu{
+    text-align: right;
+    flex: 1;
+}
+.menu ul{
+    text-align: right;
+    list-style: none;
+    margin-top: 45px;
+    margin-bottom: 10px;   
+}
+.menu  ul li{
+    display: inline-block;
+    margin : 0 30px;
+    padding: 0 10px; 
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+.menu  ul li a:hover{
+    color: darkgrey;
+}
+.Logo h1{
+    border: 3px solid black;
+    border-radius: 50px;
+    font-size: 40px;
+    padding: 2px 15px;
+    margin-left: 30px;
+}
+/*----------------------------- Home ----------------------------------------- */
+.Container{
+    margin: 100px 150px 0;
+    height: 100%;  
+}
+.smallcontainer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col-2{
+    flex-basis: 50%;
+    margin: 0 20px ;
+    max-width: 500px;
+} 
+.home{
+    background-color:lightgray;
+    height: 700px;
+    border: 1px solid lightgray;  
+}
+.col-2 h2{
+    color: gray;
+    margin-top: 100px;
+    margin-bottom: 20px;   
+    align-items: center;
+}
+.home  .image{
+    margin-right: 60px;
+}
+.home .col-2 h1{
+    color: teal;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    transform-origin: center;
+    display: inline-block;
+}
+.col-2 h1:hover{
+    transform:scale(1.2); 
+}
+.col-2 p{
+    color:gray ;
+    margin-bottom: 20px;
+}
+.col-2 .Buttons a{
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    background-color: teal;
+    border: 2px solid teal;
+    padding: 8px 10px;
+}
+.col-2 .Buttons a:hover{
+    background-color: darkgray;
+    border-color: darkgrey;
+}
+.col-2 .image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.col-2 img{
+    width: 600px;
+    height: 500px; 
+}
+.image .backgroundpic{
+   position: absolute;
+   z-index: 1;
+}
+.image .mypic{
+    position: relative;
+    z-index: 2;
+}
+ /* ---------------------------------------About----------------------------------------- */
+.About{
+    height: 700px;
+    padding-top: 40px;
+    background-color:lightgray;
+}
+.About .aboutpic img{
+    margin-left: 40px;
+    width: 300px;
+    height: 500px;
+}
+.About .col-2 .aboutme h1{
+    text-align: center;
+    color: teal;
+    transition: transform 0.3s;
+}
+.About .col-2 .aboutme h1:hover{
+    transform: scale(1.1);
+}
+.About .col-2 .aboutme .line{
+    border: 3px solid teal;
+    border-radius: 4px;
+    width: 30px;
+    margin:0 45% ;
+    display: inline-block;
+}
+.About .col-2 .aboutme p{
+    margin-top: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+.About .col-2 .aboutme .button{
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+}
+.About .col-2 .aboutme a{
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    background-color: teal;
+    border: 2px solid teal;
+    padding: 8px 10px;
+    display: inline-block;
+}
+.About .col-2 .aboutme a:hover{
+    background-color: darkgray;
+    border-color: darkgrey;
+}
+ /*----------------------------- education----------------------------------------- */
+.education{
+    height: 700px;
+    padding-top: 40px;
+    background-color:lightgray;
+}
+.education .Container h1{
+    color: teal;
+    text-align: center;
+    margin-top: 120px;
+}
+.educontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    min-height: 400px;
+}
+.step{
+    display: flex;
+    align-items: center;
+}
+.educontainer .box{
+    background-color: whitesmoke ;
+    border: 3px solid transparent; 
+    border-radius: 35px;
+    padding: 40px; 
+    width: 150px;
+    height: 150px;
+    box-shadow: -30px 30px 40px rgba(0, 0, 0, 0.50);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s;
+} 
+.box:hover{
+    transform: translateY(-10px);
+}
+.title{
+    height: 150px;
+}
+.title h4{
+    margin-bottom: 18px;
+}
+.educontainer .step:nth-of-type(1) .box{
+    border-color: #2fd1dc;
+}
+.educontainer .step:nth-of-type(2) .box,
+.educontainer .step:nth-of-type(2) .arrow{
+    border-color:navy ;
+    color: navy ;
+}
+.educontainer .step:nth-of-type(3) .box,
+.educontainer .step:nth-of-type(3) .arrow{
+    border-color: #9e2fb7;
+    color:  #9e2fb7;
+}
+.arrow{
+    font-size: 100px;
+    margin: 0 10px;
+}
+.title{
+    color: black;
+}
+.title p{
+    color: gray;
+}
+/* ---------------------------------- Skills ----------------------------------- */
+.Skills{
+    height: 900px;
+    padding-top: 40px;
+    background-color:lightgray;
+}
+.Skills .Container h1{
+    color: teal;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.Skills .Container h3{
+    margin-left: 200px;
+    margin-top: 50px;
+    font-size: 25px;
+}
+.skillscontainer{
+    margin: 0 250px;
+}
+.skillscontainer .smallcontainer{
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.skillscontainer .smallcontainer .col-4{
+    flex-basis: 25%;
+    margin-top: 50px;
+    align-items: center;
+}
+.skillscontainer .smallcontainer .col-4 img{
+    width: 80px;
+    height: 80px;
+    padding-left: 25%;   
+}
+.skillscontainer .smallcontainer .col-4 p{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+}
+/* ----------------------------Experience---------------------------------- */
+.Experience{
+    height: 600px;
+    padding-top: 80px;
+    background-color:lightgray;
+}
+.Experience .Container h1{
+    color: teal;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.excon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    min-height: 300px;    
+}
+.excon .box{
+    background-color: whitesmoke ;
+    width: 350px;
+    height: 200px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.50);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s;
+} 
+.box:hover{
+    transform: translateY(-10px);
+}
+.excon .box .title h4{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.excon .box .title p{
+    margin-bottom: 8px;
+}
+.excon .box .title  span{
+    color: black;
+}
+.title{
+    color: black;
+}
+.title p{
+    color: gray;
+}
+/* ----------------------------projects---------------------------------- */
+.Projects{
+    padding-top: 40px;
+    background-color:  lightgray;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+.Projects h1{
+    color: teal;
+    text-align: center;
+    margin: 30px 0 100px;
+}
+.Projects .pro{
+    margin-bottom: 70px;
+    padding: 20px 0 20px; 
+}
+.prodetails{
+    position: absolute;
+    margin-top: 50px;
+    height: 80px;
+    padding: 20px 30px;
+    width: 420px;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    transition:  transform 0.5s;
+}
+.prodetails:hover{
+    transform:scale(1.1); 
+}
+.pro .provideo video{
+    width: 400px;
+    height: 230px;
+}
+.pro .leftdetail{
+    left: 330px;
+}
+.pro .proinfo h4{
+    position: absolute;
+    color: black;
+    font-size: 25px;
+}  
+.pro .leftinfo h4{
+    margin: 10px 0 0 180px;
+} 
+.Projects .pro .rightvideo{
+    text-align: right;
+    margin-right: 180px;
+} 
+.Projects .pro  .rightvideo video{
+    border-top-left-radius:20px ;
+    border-bottom-right-radius: 20px;
+    box-shadow: -12px -12px 1px teal;
+}
+.pro .rightinfo h4{
+    right: 330px;
+} 
+.pro .rightdetail{
+    left: 710px;
+}
+.Projects .pro .leftvideo{
+    margin-left: 180px;
+} 
+.Projects .pro .leftvideo video{
+    border-top-right-radius:20px ;
+    border-bottom-left-radius: 20px;
+    box-shadow: 12px -12px 1px teal;
+}
+/* ----------------------------Contact---------------------------------- */
+.Contact{
+    height: 750px;
+    padding-top: 10px;
+    background-size: cover;
+}
+.Contact h1{
+    color: teal;
+    text-align: center;
+    margin:0 500px;
+}
+.Contact h5{
+    font-size: 18px;
+}
+.Contact .allcontactinfo{
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 50px;
+    height: 350px;
+    width: 250px;
+    border-radius: 15px;
+    background-color:lightgray;
+}
+.Contact .allcontactinfo .oneinfo {
+  margin-top: 47px;
+}
+.Contact .allcontactinfo .oneinfo:nth-child(2) {
+    margin-top: 25px;
+  }
+.Contact .allcontactinfo .oneinfo .icons img{
+    width: 20px;
+    margin-left: 30px;
+    display: inline-block;
+}
+.Contact .allcontactinfo .oneinfo:nth-child(2) .icons img{
+    width: 30px;
+    padding-top: 12px;
+}
+.Contact .allcontactinfo .oneinfo:nth-child(1) .icons img{
+    padding-bottom: 5px;
+}
+.Contact .allcontactinfo .oneinfo:nth-child(2) .icons h5{
+    display: inline-block;
+    margin-left: 12px;
+}
+.Contact .allcontactinfo .oneinfo:nth-child(1) .icons h5,
+.Contact .allcontactinfo .oneinfo:nth-child(3) .icons h5{
+    display: inline-block;
+    margin-left: 20px;
+}
+.Contact .allcontactinfo .oneinfo .details{
+    margin-left: 75px;
+}
+.Contact .fullcontactform {
+    margin-left: 300px;
+    margin-right: 220px;
+    border-radius: 20px;
+    height: 450px;
+    margin-top: 50px;
+    background-color: lightgray;
+}
+.Contact .contactinfo .fullcontactform .smallcontainer .contactimage{
+    flex-basis: 35%;
+    background-image: url(Images/Contactimage3.jpg);
+    background-size: cover;
+    height: 450px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.Contact .contactinfo .fullcontactform .smallcontainer .contactform{
+    flex-basis: 60%;
+    height: 400px;
+}
+.Contact .contactinfo .fullcontactform .smallcontainer .contactform h2{
+    font-size: 30px;
+    margin: 20px 0 45px;
+}
+.Contact .contactinfo .fullcontactform .smallcontainer .contactform p{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.Contact .contactinfo .fullcontactform .smallcontainer .contactform input{
+    width: 380px;
+    height: 25px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    background-color: rgb(240, 249, 249);
+    border:rgb(240, 249, 249) ;
+}
+.Contact .contactinfo .fullcontactform .smallcontainer .contactform input:nth-child(7){
+    height: 75px;
+}
+.Contact .contactinfo .fullcontactform .smallcontainer .contactform button{
+    width: 380px;
+    height: 35px;
+    border-radius: 20px;
+    border-color: teal;
+    margin-top: 5px;
+    background-color: teal;
+    color: white;
+    font-size: 20px;
+}
+.Contact .contactinfo .fullcontactform .smallcontainer .contactform button:hover{
+    background-color: lightgray;
+    border-color: lightgray;
+    color: black;
+}
+/* ----------------------------Footer---------------------------------- */
+.Footer{
+    width: 100%;
+    background-color: gray;
+    border: 1px solid black;
+}
+.Footer .statement {
+    color:black;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;  
+}
+.Footer .statement p{
+    font-size: 18px;
+}
+.Footer .statement p img{
+    width: 22px;
+}
+.Footer .footericons{
+    margin: 0 640px 15px;
+}
+.Footer .footericons .smallcontainer img{
+    flex-basis: 5%;
+    width: 40px;
+    height: 25px;
+}
+.Footer .footericons .smallcontainer img:nth-child(2){
+    width: 50px;
+    height: 38px;
+}
+.Footer .footericons .smallcontainer img:nth-child(1),
+.Footer .footericons .smallcontainer img:nth-child(4){
+    width: 35px;
+    height: 26px;
+}
+.Footer .footericons .smallcontainer img:nth-child(5){
+    width: 40px;
+    height: 20px;
+}
+/* -----------------------------Media Quary----------------------- */
+@media only screen and (max-width:1300px) {
+    .col-2{
+        flex-basis: 30%;
+        text-align: center;
+        margin: 30px 0;
+      
+    }
+    .col-2 .image{
+        display: flex;
+        padding: 0;
+        margin-right: 0px;
+    }
+    .col-2 .image img{
+        width: 450px;
+        height: 400px;   
+    } 
+}
+
+@media only screen and (max-width:1040px){
+    .col-2{
+        flex-basis: 100%;
+
+    }
+    .intro{
+        order: 2;
+    }
+    .pic{
+        order: 1;
+    }
+    .home{
+        height: 1000px;
+        /* display: flex;
+        justify-content: center; */
+    }
+    .About{
+       height: 1200px;
+    }
+}
