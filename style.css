@@ -353,7 +353,7 @@
 .prodetails:hover{
     transform:scale(1.1); 
 }
-.pro .provideo video{
+.pro .proimage img{
     width: 400px;
     height: 230px;
 }
@@ -372,7 +372,7 @@
     text-align: right;
     margin-right: 180px;
 } 
-.Projects .pro  .rightvideo video{
+.Projects .pro  .rightimage img{
     border-top-left-radius:20px ;
     border-bottom-right-radius: 20px;
     box-shadow: -12px -12px 1px teal;
@@ -383,10 +383,10 @@
 .pro .rightdetail{
     left: 710px;
 }
-.Projects .pro .leftvideo{
+.Projects .pro .leftimage{
     margin-left: 180px;
 } 
-.Projects .pro .leftvideo video{
+.Projects .pro .leftimage img{
     border-top-right-radius:20px ;
     border-bottom-left-radius: 20px;
     box-shadow: 12px -12px 1px teal;
