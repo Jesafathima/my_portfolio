@@ -4,7 +4,7 @@
 // This must be done before trying to send anything.
 (function() {
     // Replace 'YOUR_PUBLIC_KEY' with your actual Public Key from your EmailJS account settings
-    emailjs.init('YOUR_PUBLIC_KEY'); 
+    emailjs.init('i76a5bojJJmJMihhD'); 
 })();
 
 
@@ -26,19 +26,19 @@ window.onload = function() {
 
         // --- 3. Send the form using emailjs.sendForm ---
         // Replace the placeholder IDs below with YOUR specific IDs
-        const serviceID = 'YOUR_SERVICE_ID'; 
-        const templateID = 'YOUR_TEMPLATE_ID';
+        const serviceID = 'service_il8ontc'; 
+        const templateID = ' template_2a0co2q';
 
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
                 // Success case
-                formStatus.textContent = 'Message sent successfully! 🎉';
+                formStatus.textContent = 'Message sent successfully!';
                 formStatus.style.color = 'green';
                 contactForm.reset(); // Clear the form fields
                 submitButton.disabled = false; // Re-enable button
             }, (err) => {
                 // Error case
-                formStatus.textContent = 'Failed to send message. Please try again later. 😟';
+                formStatus.textContent = 'Failed to send message. Please try again later.';
                 formStatus.style.color = 'red';
                 console.error('EmailJS Error:', err);
                 submitButton.disabled = false; // Re-enable button
