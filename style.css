@@ -479,10 +479,17 @@
     margin-bottom: 15px;
     background-color: rgb(240, 249, 249);
     border:rgb(240, 249, 249) ;
+    padding-left: 10px;
 }
-/* .Contact .contactinfo .fullcontactform .smallcontainer .contactform input:nth-child(7){
-    height: 75px;
-} */
+.Contact .contactinfo .fullcontactform .smallcontainer .contactform textarea{
+    width: 380px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    background-color: rgb(240, 249, 249);
+    border:rgb(240, 249, 249) ;
+    padding-left: 10px;
+    padding-top: 5px;
+}
 .Contact .contactinfo .fullcontactform .smallcontainer .contactform button{
     width: 380px;
     height: 35px;
@@ -576,3 +583,4 @@
        height: 1200px;
     }
 }
+
