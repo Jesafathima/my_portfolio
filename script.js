@@ -1,7 +1,7 @@
 
 (function() {
     
-    emailjs.init('i76a5bojJJmJMihhD'); 
+    emailjs.init(i76a5bojJJmJMihhD); 
 })();
 
 window.onload = function() {
@@ -17,8 +17,8 @@ window.onload = function() {
         formStatus.textContent = 'Sending message...';
         formStatus.style.color = 'gray';
 
-        const serviceID = 'service_il8ontc'; 
-        const templateID = ' template_2a0co2q';
+        const serviceID = service_il8ontc; 
+        const templateID = template_2a0co2q;
 
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
